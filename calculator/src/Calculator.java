@@ -35,6 +35,14 @@ public class Calculator {
     }
 
     private double performOperation(double firstArgument, double secondArgument, String operation) {
+        switch (operation) {
+            case "*": {
+                return firstArgument * secondArgument;
+            }
+            case "/": {
+                return firstArgument / secondArgument;
+            }
+        }
         return 0;
     }
 }
